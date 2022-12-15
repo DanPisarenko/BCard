@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Card</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+        body {
+            
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            justify-content: center;
+            align-content: center;
+            margin: 0;
+            gap: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        dream-cc {
+            background-color: aliceblue;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" name="user">
+        <input type="text" name="prof">
+        <input type="email" name="mail">
+        <input type="tel" name="tel">
+        <select name="logo">
+            <option value="ghost">Ghost</option>
+            <option value="music">Music</option>
+            <option value="bell">Bell</option>
+            <option value="plane">Plane</option>
+
+        </select>
+    </form>
+    <aaa-bcard user="Danya" prof="Developer" tel="+7(123)456-78-90" mail="pisarenko@mail.ru" logo="bell"></aaa-bcard>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
